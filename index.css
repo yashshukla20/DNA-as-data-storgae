@@ -1,0 +1,151 @@
+body {
+    margin: 0 0;
+    font-family: 'Monaco';
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    margin: auto;
+    width: 1002px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.normal_input {
+    margin: auto;
+    position: relative;
+    top: 20px;
+
+    width: 1002px;
+    height: 300px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.normal_input textarea {
+    width: 982px;
+    height: 280px;
+    text-align: start;
+    resize: none;
+    font-size: 16px;
+    border: none;
+    padding: 10px;
+}
+
+.convert_div {
+    margin: auto;
+    width: 500px;
+    position: relative;
+    top: 20px;
+    height: 130px;
+}
+
+.convert_div ul {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.convert_div ul li {
+    float: left;
+    height: 100%;
+    width: 240px;
+    padding: 0;
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.convert_button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    position: relative;
+}
+
+.convert_button input[type="file"] {
+    position: absolute;
+    /*opacity: 0;*/
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.description {
+    width: 1002px;
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+    color: #72986d;
+}
+
+#numberToDecimalismTable {
+    margin: auto;
+    position: relative;
+    top: 20px;
+    border-collapse: collapse;
+}
+
+#numberToDecimalismTable td {
+    border: 1px solid #d28888;
+    padding: 8px;
+    font-size: 12px;
+}
+
+#numberToDecimalismTable tr:nth-child(odd) td {
+    color: #000000;
+    background-color: #6d7bba;
+}
+
+.dna_result_string {
+    font-weight: bold;
+}
+
+.bottom {
+    height: 100px;
+    width: 100%;
+}
+
+#empty_view {
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #5df1fe;
+    opacity: 0.8;
+    z-index: 100;
+    top: 0;
+
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+
+    display: -o-box;
+    -o-box-orient: horizontal;
+    -o-box-pack: center;
+    -o-box-align: center;
+
+    display: -ms-box;
+    -ms-box-orient: horizontal;
+    -ms-box-pack: center;
+    -ms-box-align: center;
+
+    display: box;
+    box-orient: horizontal;
+    box-pack: center;
+    box-align: center;
+}

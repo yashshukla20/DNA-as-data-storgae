@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DNA Data Storage Convert Tool</title>
+
+    <link rel="stylesheet" href="./index/css/index.css">
+    <link rel="stylesheet" href="./index/css/convert_button.css">
+
+    <script src="./index/js/DNAConvertArithmetic.js"></script>
+    <script src="./index/js/fileOption.js"></script>
+    <script src="./index/js/index.js"></script>
+</head>
+<body>
+    <div class="title">DNA Data Storage Convert Tool</div>
+    <br>
+    <div class="normal_input"><textarea id = "inputText" type="text" placeholder="Please input what string you want to convert"></textarea></div>
+    <br>
+    <div class="convert_div">
+        <ul>
+            <li>
+                <button class="convert_button" style="background-color: rgb(56,173,56);"><span>Upload a file</span><br><div style="font-size: 13px">(only support Image, .txt, and .mp3)</div><input id="openNormalFile" style="background-color: #f4511e" type='file' accept='image/*,.txt,.mp3' onchange='openNormalFile()'></button>
+            </li>
+            <li>
+                <button class="convert_button" onclick="convertBtnTap(0)" style="background-color: rgb(56, 173, 56);"><span>Convert To DNA Base</span></button>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <button class="convert_button" onclick="convertBtnTap(1)"><span>Upload a file</span><br><div style="font-size: 13px">(only support .gboke)</div><input id="openGbokeFile" style="background-color: #f4511e" type='file' accept='.gboke' onchange='openGbokeFile()'></button>
+            </li>
+            <li>
+                <button class="convert_button" onclick="convertBtnTap(1)"><span>Convert To String</span></button>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <div class="normal_input"><textarea id = "outputText" type="text" placeholder="Result"></textarea></div>
+    <br>
+    <div  class="description"><span>First, we convert content from decimalism to binary. Then binary content will be splited to two elements into a set. The First, Second, and Three set is separately converted from binary to first, second, and fourth position of DNA sequence. The last one will be converted two elements of base. Separately set the third and fifth position of DNA sequence.</span></div>
+    <br>
+    <div class="title">Lists 256 characters to nucleotides.<button onclick="numberToDecimalismTable()">Click display</button></div>
+    <br>
+    <table id="numberToDecimalismTable"></table>
+    <br>
+    <div class="bottom"></div>
+
+    <div id="empty_view">Converting. Please wait...</div>
+
+</body>
+
+<script>
+
+</script>
+
+</html>
